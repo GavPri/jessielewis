@@ -13,7 +13,7 @@ function App() {
       <Header />
       <div>
         <Switch>
-          <Route exact path="/" render={() => <HomePage />} />
+          <Route exact path="/jessielewis" render={() => <HomePage />} />
           <Route exact path="/about" render={() => <AboutMe />} />
           <Route exact path="/services" render={() => <Services />} />
           <Route exact path="/contact" render={() => <ContactForm />} />
