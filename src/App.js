@@ -10,6 +10,7 @@ import {
   Route,
   createBrowserRouter,
   createRoutesFromElements,
+  Outlet
 } from "react-router-dom/dist";
 
 // --- create variable called 'router'
