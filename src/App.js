@@ -12,12 +12,16 @@ import {
   createRoutesFromElements,
 } from "react-router-dom/dist";
 
-// create variable called 'router'
+// --- create variable called 'router'
+const router = createBrowserRouter(
+  createRoutesFromElements(<Route path="/" element={<Root />}></Route>)
+);
 
-const router = createBrowserRouter(createRoutesFromElements(
-  <Route path="/" element={<Root />} ></Route>
-));
+// --- define the root variable.
 
+const Root = () => {
+  return <Header />;
+};
 function App() {
   return (
     <div>
