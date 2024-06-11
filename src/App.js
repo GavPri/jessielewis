@@ -15,7 +15,15 @@ import {
 
 // --- create variable called 'router'
 const router = createBrowserRouter(
-  createRoutesFromElements(<Route path="/" element={<Root />}></Route>)
+  createRoutesFromElements(
+    <Route path="/" element={<Root />}>
+      <Route index element={<HomePage />} />
+      <Route exact path="/about" render={() => <AboutMe />} />
+      <Route exact path="/services" render={() => <Services />} />
+      <Route exact path="/contact" render={() => <ContactForm />} />
+      <Route exact path="/faqs" render={() => <Faqs />} />
+    </Route>
+  )
 );
 
 // --- define the root variable.
