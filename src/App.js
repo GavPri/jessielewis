@@ -10,7 +10,7 @@ import {
   Route,
   createBrowserRouter,
   createRoutesFromElements,
-  Outlet
+  Outlet,
 } from "react-router-dom/dist";
 
 // --- create variable called 'router'
@@ -21,7 +21,14 @@ const router = createBrowserRouter(
 // --- define the root variable.
 
 const Root = () => {
-  return <Header />;
+  return (
+    <>
+      <Header />
+      <>
+        <Outlet />
+      </>
+    </>
+  );
 };
 function App() {
   return (
