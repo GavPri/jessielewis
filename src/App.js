@@ -31,10 +31,10 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
       <Route index element={<HomePage />} />
-      <Route exact path="/about" render={() => <AboutMe />} />
-      <Route exact path="/services" render={() => <Services />} />
-      <Route exact path="/contact" render={() => <ContactForm />} />
-      <Route exact path="/faqs" render={() => <Faqs />} />
+      <Route exact path="/about" element={<AboutMe />} />
+      <Route exact path="/services" element={<Services />} />
+      <Route exact path="/contact" element={<ContactForm />} />
+      <Route exact path="/faqs" element={<Faqs />} />
     </Route>
   )
 );
