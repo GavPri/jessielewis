@@ -1,5 +1,4 @@
 import Header from "./components/navigation-bar/Header";
-import { Route, Switch } from "react-router-dom";
 import HomePage from "./pages/homepage/HomePage";
 import Faqs from "./pages/faqs/Faqs";
 import ContactForm from "./pages/contact-me/ContactForm";
@@ -8,13 +7,16 @@ import Services from "./pages/services/Services";
 
 // --- imports for react-router-dom v6
 import {
+  Route,
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom/dist";
 
 // create variable called 'router'
 
-const router = createBrowserRouter(createRoutesFromElements());
+const router = createBrowserRouter(createRoutesFromElements(
+  <Route path="/" element={<Root />} ></Route>
+));
 
 function App() {
   return (
