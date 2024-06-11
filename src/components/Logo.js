@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+
 const Logo = ({ height = 45 }) => {
   return (
     <NavLink to="/">
