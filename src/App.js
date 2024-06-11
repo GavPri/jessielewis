@@ -42,16 +42,6 @@ const router = createBrowserRouter(
 function App() {
   return (
     <div>
-      {/* <Header />
-      <div>
-        <Switch>
-          <Route exact path="/jessielewis" render={() => <HomePage />} />
-          <Route exact path="/about" render={() => <AboutMe />} />
-          <Route exact path="/services" render={() => <Services />} />
-          <Route exact path="/contact" render={() => <ContactForm />} />
-          <Route exact path="/faqs" render={() => <Faqs />} />
-        </Switch>
-      </div> */}
       <RouterProvider router={router} />
     </div>
   );
