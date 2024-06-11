@@ -6,6 +6,9 @@ import ContactForm from "./pages/contact-me/ContactForm";
 import AboutMe from "./pages/about-me/AboutMe";
 import Services from "./pages/services/Services";
 
+// --- imports for react-router-dom v6 
+import { createBrowserRouter } from "react-router-dom/dist";
+
 
 function App() {
   return (
