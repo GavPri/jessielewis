@@ -11,6 +11,7 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
   Outlet,
+  RouterProvider,
 } from "react-router-dom/dist";
 
 // --- create variable called 'router'
@@ -41,7 +42,7 @@ const Root = () => {
 function App() {
   return (
     <div>
-      <Header />
+      {/* <Header />
       <div>
         <Switch>
           <Route exact path="/jessielewis" render={() => <HomePage />} />
@@ -50,7 +51,8 @@ function App() {
           <Route exact path="/contact" render={() => <ContactForm />} />
           <Route exact path="/faqs" render={() => <Faqs />} />
         </Switch>
-      </div>
+      </div> */}
+      <RouterProvider router={router} />
     </div>
   );
 }
