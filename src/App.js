@@ -12,20 +12,7 @@ import {
   createRoutesFromElements,
   Outlet,
   RouterProvider,
-} from "react-router-dom/dist";
-
-// --- create variable called 'router'
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<Root />}>
-      <Route index element={<HomePage />} />
-      <Route exact path="/about" render={() => <AboutMe />} />
-      <Route exact path="/services" render={() => <Services />} />
-      <Route exact path="/contact" render={() => <ContactForm />} />
-      <Route exact path="/faqs" render={() => <Faqs />} />
-    </Route>
-  )
-);
+} from "react-router-dom";
 
 // --- define the root variable.
 
@@ -39,6 +26,19 @@ const Root = () => {
     </>
   );
 };
+// --- create variable called 'router'
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Root />}>
+      <Route index element={<HomePage />} />
+      <Route exact path="/about" render={() => <AboutMe />} />
+      <Route exact path="/services" render={() => <Services />} />
+      <Route exact path="/contact" render={() => <ContactForm />} />
+      <Route exact path="/faqs" render={() => <Faqs />} />
+    </Route>
+  )
+);
+
 function App() {
   return (
     <div>
