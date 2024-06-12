@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/jessielewis/static/css/main.1651074a.css",
-    "main.js": "/jessielewis/static/js/main.c293fb93.js",
-    "static/js/787.31be4f73.chunk.js": "/jessielewis/static/js/787.31be4f73.chunk.js",
-    "static/media/jessiebanner.png": "/jessielewis/static/media/jessiebanner.9eed1e26bbbf0b3959d2.png",
-    "static/media/jlewis-background.png": "/jessielewis/static/media/jlewis-background.0ab5c837a96a87970327.png",
-    "static/media/banner.jpeg": "/jessielewis/static/media/banner.6781b073ddbd23259bae.jpeg",
-    "static/media/JessieLewis.png": "/jessielewis/static/media/JessieLewis.f1f421e3517c038ae834.png",
-    "index.html": "/jessielewis/index.html",
-    "main.1651074a.css.map": "/jessielewis/static/css/main.1651074a.css.map",
-    "main.c293fb93.js.map": "/jessielewis/static/js/main.c293fb93.js.map",
-    "787.31be4f73.chunk.js.map": "/jessielewis/static/js/787.31be4f73.chunk.js.map"
+    "main.css": "./static/css/main.15e23a0f.css",
+    "main.js": "./static/js/main.660d3004.js",
+    "static/js/787.31be4f73.chunk.js": "./static/js/787.31be4f73.chunk.js",
+    "static/media/jessiebanner.png": "./static/media/jessiebanner.9eed1e26bbbf0b3959d2.png",
+    "static/media/jlewis-background.png": "./static/media/jlewis-background.0ab5c837a96a87970327.png",
+    "static/media/banner.jpeg": "./static/media/banner.6781b073ddbd23259bae.jpeg",
+    "static/media/JessieLewis.png": "./static/media/JessieLewis.f1f421e3517c038ae834.png",
+    "index.html": "./index.html",
+    "main.15e23a0f.css.map": "./static/css/main.15e23a0f.css.map",
+    "main.660d3004.js.map": "./static/js/main.660d3004.js.map",
+    "787.31be4f73.chunk.js.map": "./static/js/787.31be4f73.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1651074a.css",
-    "static/js/main.c293fb93.js"
+    "static/css/main.15e23a0f.css",
+    "static/js/main.660d3004.js"
   ]
 }
