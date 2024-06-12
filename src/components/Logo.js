@@ -2,16 +2,21 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import JessieLewis from "../images/JessieLewis.png";
 
-const Logo = ({ height = 45 }) => {
+const Logo = () => {
+  // --- div backgrond style to deal with logo rendering in prodction
+  const divStyle = {
+    backgroundImage: `url(${JessieLewis})`,
+    backgroundSize: "cover",
+    backgroundPosition: "top, left",
+    backgroundRepeat: "no-repeat",
+  };
+
   return (
-    <NavLink to="/">
-      <img
-        src={JessieLewis}
-        alt="Logo for Jessie Lewis Mental Performance Consulting"
-        height={height}
-        width={height}
-      />
-    </NavLink>
+    <NavLink
+      to="/"
+      className="h-[85px] aspect-square"
+      style={divStyle}
+    ></NavLink>
   );
 };
 
