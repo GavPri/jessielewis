@@ -29,7 +29,7 @@ const Root = () => {
 // --- create variable called 'router'
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Root />}>
+    <Route path="/jessielewis" element={<Root />}>
       <Route index element={<HomePage />} />
       <Route exact path="/about" element={<AboutMe />} />
       <Route exact path="/services" element={<Services />} />
