@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import jessiebanner from "../../images/jessiebanner.png";
 import AboutMeCard from "./AboutMeCard";
 import { FaArrowAltCircleDown } from "react-icons/fa";
