@@ -8,10 +8,6 @@ import Services from "./pages/services/Services";
 // --- imports for react-router-dom v6
 import {
   Route,
-  createBrowserRouter,
-  createRoutesFromElements,
-  Outlet,
-  RouterProvider,
   Routes,
 } from "react-router-dom";
 
@@ -19,11 +15,13 @@ function App() {
   return (
     <div>
       <Header />
-      <Routes><Route index element={<HomePage />} />
-      <Route exact path="/about" element={<AboutMe />} />
-      <Route exact path="/services" element={<Services />} />
-      <Route exact path="/contact" element={<ContactForm />} />
-      <Route exact path="/faqs" element={<Faqs />} /> </Routes >
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route exact path="/about" element={<AboutMe />} />
+        <Route exact path="/services" element={<Services />} />
+        <Route exact path="/contact" element={<ContactForm />} />
+        <Route exact path="/faqs" element={<Faqs />} />
+      </Routes>
     </div>
   );
 }
