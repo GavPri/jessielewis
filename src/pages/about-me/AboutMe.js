@@ -23,9 +23,12 @@ const AboutMe = () => {
           className="h-dvh w-dvw aspect-square rounded-lg m-auto mx-2"
         >
           {/* --- scroll indicator */}
-          <div className="w-64 aspect-square mt-auto bg-darkest mx-auto absolute bottom-24 left-0 right-0 flex justify-center flex-col items-center">
-            <p>About Me</p>
-            <FaArrowAltCircleDown size={40} className="animate-bounce" />
+          <div className="w-64 aspect-square mt-auto bg-dark bg-opacity-50 mx-auto absolute bottom-32 left-0 right-0 flex justify-center flex-col items-center rounded-md">
+            <p className="mb-12 font-poppins text-light text-3xl">About Me</p>
+            <FaArrowAltCircleDown
+              size={60}
+              className="animate-bounce text-light"
+            />
           </div>
         </div>
       </div>
