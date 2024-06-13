@@ -15,9 +15,6 @@ const AboutMe = () => {
     <div className="mt-24 max-w-[1240px] m-auto ">
       {/* ----- Title */}
       <div className="mb-4 flex flex-col justify-center items-center">
-        <h1 className="text-center text-darkest capitalize font-poppins text-5xl mb-2">
-          About Jessie
-        </h1>
         {/* ----- Profile picture */}
         <div
           style={divStyle}
