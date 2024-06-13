@@ -18,12 +18,12 @@ import {
 
 const Root = () => {
   return (
-    <>
+    <div>
       <Header />
       <>
         <Outlet />
       </>
-    </>
+    </div>
   );
 };
 // --- create variable called 'router'
