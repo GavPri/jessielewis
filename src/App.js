@@ -12,6 +12,7 @@ import {
   createRoutesFromElements,
   Outlet,
   RouterProvider,
+  Routes,
 } from "react-router-dom";
 
 // --- create variable called 'router'
@@ -30,6 +31,7 @@ function App() {
   return (
     <div>
       <Header />
+      <Routes> </Routes >
     </div>
   );
 }
