@@ -15,23 +15,15 @@ import {
   Routes,
 } from "react-router-dom";
 
-// --- create variable called 'router'
-
-    <Route path="/" element={<Root />}>
-      <Route index element={<HomePage />} />
-      <Route exact path="/about" element={<AboutMe />} />
-      <Route exact path="/services" element={<Services />} />
-      <Route exact path="/contact" element={<ContactForm />} />
-      <Route exact path="/faqs" element={<Faqs />} />
-    </Route>
-  )
-);
-
 function App() {
   return (
     <div>
       <Header />
-      <Routes> </Routes >
+      <Routes><Route index element={<HomePage />} />
+      <Route exact path="/about" element={<AboutMe />} />
+      <Route exact path="/services" element={<Services />} />
+      <Route exact path="/contact" element={<ContactForm />} />
+      <Route exact path="/faqs" element={<Faqs />} /> </Routes >
     </div>
   );
 }
