@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 // ---- import hashrouter
-import { HashRouter, createHashRouter } from "react-router-dom";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // router for HashRouter 
@@ -14,7 +14,7 @@ const router = createHashRouter([{
 }])
 root.render(
   <React.StrictMode>
-    
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
