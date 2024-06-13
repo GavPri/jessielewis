@@ -4,9 +4,14 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 // ---- import hashrouter
-import { HashRouter } from "react-router-dom";
+import { HashRouter, createHashRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+// router for HashRouter 
+const router = createHashRouter([{
+  path: "/*",
+  element: <App />
+}])
 root.render(
   <React.StrictMode>
     <HashRouter>
