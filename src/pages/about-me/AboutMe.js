@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useRef } from "react";
 import jessiebanner from "../../images/jessiebanner.png";
 import AboutMeCard from "./AboutMeCard";
 import { FaArrowAltCircleDown } from "react-icons/fa";
 
 const AboutMe = () => {
+
+  // --- fade in animation for scroll indicator. 
+  const scrollIndicatorRef = useRef(null)
   // ---- Profile picture
   const divStyle = {
     backgroundImage: `url(${jessiebanner})`,
