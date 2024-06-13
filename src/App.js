@@ -29,7 +29,7 @@ import {
 function App() {
   return (
     <div>
-      <RouterProvider router={router} />
+      <Header />
     </div>
   );
 }
