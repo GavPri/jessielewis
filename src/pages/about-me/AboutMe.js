@@ -25,7 +25,7 @@ const AboutMe = () => {
           {/* --- scroll indicator */}
           <div className="w-64 aspect-square mt-auto bg-darkest mx-auto absolute bottom-24 left-0 right-0 flex justify-center flex-col items-center">
             <p>About Me</p>
-            <FaArrowAltCircleDown size={20} />
+            <FaArrowAltCircleDown size={40} className="animate-bounce" />
           </div>
         </div>
       </div>
