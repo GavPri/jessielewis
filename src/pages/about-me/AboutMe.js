@@ -18,8 +18,9 @@ const AboutMe = () => {
         {/* ----- Profile picture */}
         <div
           style={divStyle}
-          className="w-64 aspect-square rounded-lg m-auto mx-2"
-        ></div>
+          className="h-dvh w-dvw aspect-square rounded-lg m-auto mx-2"
+        >
+        </div>
       </div>
       <AboutMeCard />
     </div>
