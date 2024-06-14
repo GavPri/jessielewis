@@ -5,6 +5,8 @@ import { FaArrowAltCircleDown } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 
 const AboutMe = () => {
+  // --- Ref for use in view
+  const { ref: FadeInAnimation, inView: ElementIsVisible } = useInView();
   // ---- Profile picture
   const divStyle = {
     backgroundImage: `url(${jessiebanner})`,
@@ -24,15 +26,21 @@ const AboutMe = () => {
           className="h-dvh w-dvw aspect-square rounded-lg m-auto mx-2"
         >
           {/* --- scroll indicator */}
-          
-            <div className="opacity-0 w-64 aspect-square mt-auto bg-dark mx-auto absolute bottom-32 left-0 right-0 flex justify-center flex-col items-center rounded-md">
-              <p className="mb-12 font-poppins text-light text-3xl">About Me</p>
-              <FaArrowAltCircleDown
-                size={60}
-                className="animate-bounce text-light"
-              />
-            </div>
-          
+
+          <div
+            ref={FadeInAnimation}
+            className={`opacity-0 w-full bg-darkest bg-opacity-50 mt-auto mx-auto absolute bottom-24 left-0 right-0 flex justify-center flex-col items-center rounded-md ${
+              ElementIsVisible ? "fade-in" : ""
+            }`}
+          >
+            <h1 className="mb-12 font-poppins text-lightest text-3xl">
+              About Me
+            </h1>
+            <FaArrowAltCircleDown
+              size={60}
+              className="animate-bounce text-light"
+            />
+          </div>
         </div>
       </div>
       <AboutMeCard />
