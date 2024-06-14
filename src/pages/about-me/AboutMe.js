@@ -2,7 +2,7 @@ import React from "react";
 import jessiebanner from "../../images/jessiebanner.png";
 import AboutMeCard from "./AboutMeCard";
 import { FaArrowAltCircleDown } from "react-icons/fa";
-
+import { useInView } from "react-intersection-observer";
 
 const AboutMe = () => {
   // ---- Profile picture
