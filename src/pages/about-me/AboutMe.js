@@ -11,7 +11,7 @@ const AboutMe = () => {
   const divStyle = {
     backgroundImage: `url(${jessiebanner})`,
     backgroundSize: "cover",
-    backgroundPosition: "top, left",
+    backgroundPosition: "center, top",
     backgroundRepeat: "no-repeat",
     position: "relative",
   };
@@ -23,13 +23,13 @@ const AboutMe = () => {
         {/* ----- Profile picture */}
         <div
           style={divStyle}
-          className="h-dvh w-dvw aspect-square rounded-lg m-auto mx-2"
+          className="h-dvh w-dvw sm:max-w-[1240px] sm:max-h-100dvh aspect-square rounded-lg m-auto mx-2"
         >
           {/* --- scroll indicator */}
 
           <div
             ref={FadeInAnimation}
-            className={`opacity-0 w-full bg-darkest bg-opacity-50 mt-auto mx-auto absolute bottom-24 left-0 right-0 flex justify-center flex-col items-center rounded-md ${
+            className={`opacity-0 w-full sm:max-w-sm sm:p-4 bg-darkest bg-opacity-50 mt-auto mx-auto absolute bottom-24 left-0 right-0 flex justify-center flex-col items-center rounded-md ${
               ElementIsVisible ? "fade-in" : ""
             }`}
           >

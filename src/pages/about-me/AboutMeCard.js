@@ -31,7 +31,9 @@ const AboutMeCardContent = ({ data }) => {
         {data.title}
       </h2>
       <div className="text-center p-2 md:p-6 m-auto text-light ">
-        <p className="font-poppins md:text-xl">{data.content}</p>
+        <p className="font-poppins sm:text-xl">
+          {data.content}
+        </p>
       </div>
     </div>
   );
